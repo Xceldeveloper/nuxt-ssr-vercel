@@ -12,7 +12,7 @@
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
-    "prepare": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install",
+    "prepare": "husky installxx",
     "test": "jest"
   },
   "lint-staged": {
