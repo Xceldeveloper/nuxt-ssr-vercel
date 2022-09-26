@@ -12,7 +12,7 @@
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix && yarn lint:style --fix",
-    "prepare": "husky installxx",
+    "prepare": "is-ci || husky install",
     "test": "jest"
   },
   "lint-staged": {
@@ -51,6 +51,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
     "jest": "^27.4.4",
     "lint-staged": "^12.1.2",
     "nuxt-windicss": "^2",
