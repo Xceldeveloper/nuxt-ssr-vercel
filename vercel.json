@@ -4,7 +4,18 @@
   "routes": [
     {
       "src": "/api/express",
-      "dest": "/api/express.js"
+      "dest": "/api/express.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/api/",
+      "dest": "/api/express.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/send-email",
+      "dest": "/api/express.js",
+      "methods": ["POST"]
     }
   ],
   "builds": [
