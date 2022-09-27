@@ -23,8 +23,8 @@
       });
       this.message = response.data;
 
-      const respons2 = await this.$axios.get("/api/", {});
-      this.fromServer = respons2.data.message;
+      // const respons2 = await this.$axios.get("/api/", {});
+      // this.fromServer = respons2.data.message;
       const sendEmail = await this.$axios.post("/api/send-email", {
         email: "weirdfalcao@gmail.com",
         name: "ov",
